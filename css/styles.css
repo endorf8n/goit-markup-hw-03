@@ -7,23 +7,65 @@
   --light-background-color: #e5e5e5;
   --secondary-color: #f4f4fd;
 }
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
   text-decoration: none;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--primary-text-color);
-  background-color: var(--white-color);
+.container {
+  outline: 3px solid tomato;
+
+  display: flex;
+
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Header  */
 .page-header {
   background-color: var(--white-color);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 40px;
+}
+
+.nav-item:first-child {
+  margin-left: 76px;
+}
+
+.contacts-item {
+  margin-left: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.contacts-item:first-child {
+  margin-left: 0;
 }
 
 .logo {
@@ -41,6 +83,9 @@ body {
 }
 
 .nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -55,6 +100,7 @@ body {
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
 }
 
 .contact-info {
@@ -85,7 +131,6 @@ body {
 }
 
 .hero-btn {
-  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -157,7 +202,6 @@ body {
 /* portfolio page  */
 
 .filter-btn {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
