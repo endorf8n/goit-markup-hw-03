@@ -102,11 +102,7 @@ img {
   color: var(--accent-color);
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-}
-
+.nav,
 .navigation-list {
   display: flex;
   align-items: center;
@@ -162,6 +158,8 @@ img {
 
 .hero-title {
   margin-bottom: 48px;
+  padding-left: 316px;
+  padding-right: 316px;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -194,11 +192,14 @@ img {
 
 .advantages-list {
   display: flex;
-  gap: 24px;
 }
 
 .advantages-item {
+  margin-left: 24px;
   flex-basis: calc((100%-72px) / 4);
+}
+.advantages-item:first-child {
+  margin-left: 0;
 }
 
 .section-subtitle {
@@ -218,6 +219,7 @@ img {
 }
 
 /* Section Projects  */
+
 .section-title {
   margin-bottom: 72px;
 
@@ -231,12 +233,16 @@ img {
 
 .project-list {
   display: flex;
-  gap: 24px;
 }
 
 .project-card {
+  margin-left: 24px;
   flex-basis: calc((100%-48px) / 3);
   border: 1px solid var(--borders-color);
+}
+
+.project-card:first-child {
+  margin-left: 0;
 }
 
 /* our team  */
@@ -247,14 +253,19 @@ img {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
   flex-basis: calc((100%-72px) / 4);
 }
 
 .team-card {
+  margin-left: 24px;
   background-color: var(--white-color);
   text-align: center;
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-card:first-child {
+  margin-left: 0;
 }
 
 .team-card-content {
@@ -265,6 +276,7 @@ img {
 }
 
 /* footer  */
+
 .footer {
   background-color: var(--secondary-text-color);
   padding-top: 100px;
@@ -273,17 +285,35 @@ img {
 
 .footer-logo {
   color: var(--secondary-color);
-  margin-bottom: 16px;
 }
 
 .footer-text {
   margin-top: 16px;
+  padding-right: 864px;
   color: var(--secondary-color);
 }
 
 /* portfolio page  */
 
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
 .filter-btn {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border: 1px solid var(--borders-color);
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -297,4 +327,28 @@ img {
 .filter-btn:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  border-color: transparent;
+}
+
+/* Portfolio set  */
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -24px;
+  margin-top: -48px;
+}
+
+.portfolio-card {
+  flex-basis: calc(100% / 3 - 24px);
+  margin-left: 24px;
+  margin-top: 48px;
+}
+
+.portfolio-card-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border: 1px solid var(--borders-color);
+  border-top-style: none;
 }
